@@ -1,0 +1,4 @@
+#Tue Dec 06 13:15:57 CET 2011
+eclipse.preferences.version=1
+include_path=0;/CommentCount/src\u00050;/CommentCount/test\u00055;com.zend.php.phpunit.CONTAINER
+use_asp_tags_as_php=false
