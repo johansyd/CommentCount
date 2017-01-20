@@ -12,6 +12,10 @@ if there is a multi-line comment marker on the same line. All forms of inline co
     curl -sS https://getcomposer.org/installer | sudo php
     ./composer.phar install
 
+##Test
+
+    composer compile
+
 ##Usage
 
     bin/comment_count_script.php <php-file> | -help | -help | -h | -?
