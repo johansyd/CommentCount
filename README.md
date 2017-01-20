@@ -15,3 +15,4 @@ if there is a multi-line comment marker on the same line. All forms of inline co
 ##Usage
 
     bin/comment_count_script.php <php-file> | -help | -help | -h | -?
+
