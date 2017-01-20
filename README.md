@@ -7,6 +7,11 @@ NB:
 It will not detect unintentional syntax mistakes and it will count lines with code as comment lines 
 if there is a multi-line comment marker on the same line. All forms of inline comments are ignored.
 
-Usage:
+##Install
 
-<path-to-script>/comment_count_script.php <php-file> | -help | -help | -h | -?
+    curl -sS https://getcomposer.org/installer | sudo php
+    ./composer.phar install
+
+##Usage
+
+    bin/comment_count_script.php <php-file> | -help | -help | -h | -?

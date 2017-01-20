@@ -1,6 +1,7 @@
 #!/usr/bin/php
 <?php
-require_once 'src/CommentCounter.php';
+require_once dirname(__DIR__) . '/vendor/autoload.php';
+use CommentCount\CommentCounter;
 
 /**
  * Script for finding the number of lines in a php file that is commented.

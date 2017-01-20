@@ -1,4 +1,6 @@
 <?php
+namespace CommentCount;
+
 /**
  * Counts the number of commented and uncommented lines 
  * and display the total to the user.
@@ -45,23 +47,23 @@ class CommentCounter
     /**
      * 
      * @param string $fileName
-     * @throws RuntimeException
+     * @throws \RuntimeException
      */
     public function __construct($fileName)
     {
         if (!is_string($fileName)){
-            throw new RuntimeException("The file name was not a string.");
+            throw new \RuntimeException("The file name was not a string.");
         }
         
         if (strlen($fileName) == 0){
-            throw new RuntimeException("The file name was not specified.");
+            throw new \RuntimeException("The file name was not specified.");
         }
         
         if (!file_exists($fileName)){
-            throw new RuntimeException("The file:" . $fileName . " does not exist");
+            throw new \RuntimeException("The file:" . $fileName . " does not exist");
         }
         if (!is_readable($fileName)){
-            throw new RuntimeException("The file:" . $fileName . " is not readable.");
+            throw new \RuntimeException("The file:" . $fileName . " is not readable.");
         }
         
         $this->_setFileName($fileName);
@@ -100,14 +102,14 @@ class CommentCounter
     
     /**
      * 
-     * @throws RuntimeException
+     * @throws \RuntimeException
      * @return void
      */
     protected function _analyze()
     {
         $lines = file($this->getFileName(), FILE_IGNORE_NEW_LINES);
         if (!$lines){
-            throw new RuntimeException("Failed to read the file:");
+            throw new \RuntimeException("Failed to read the file:");
         }
         $this->_setLines(count($lines));
         

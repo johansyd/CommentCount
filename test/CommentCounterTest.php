@@ -1,7 +1,6 @@
 <?php
-require_once '../src/CommentCounter.php';
 
-require_once 'PHPUnit/Framework/TestCase.php';
+use CommentCount\CommentCounter;
 
 define('DATA_TEST_DIR', __DIR__ . DIRECTORY_SEPARATOR . 'data');
 /**

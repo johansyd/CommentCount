@@ -1,0 +1,19 @@
+language: php
+
+php:
+  - 5.3
+  - 5.5
+
+# Enable faster builds using the new container-based infrastructure
+sudo: false
+
+cache:
+  bundler: true
+  directories:
+    - vendor
+
+install:
+  - composer install --dev
+
+script:
+  - composer compile
