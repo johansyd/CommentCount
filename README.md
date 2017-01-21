@@ -9,7 +9,7 @@ if there is a multi-line comment marker on the same line. All forms of inline co
 
 ##Install
 
-    curl -sS https://getcomposer.org/installer | sudo php
+    curl -sS https://getcomposer.org/installer | php
     ./composer.phar install
 
 ##Test
