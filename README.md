@@ -1,3 +1,4 @@
+[![Stories in Ready](https://badge.waffle.io/johansyd/CommentCount.png?label=ready&title=Ready)](https://waffle.io/johansyd/CommentCount?utm_source=badge)
 This PHP CLI program counts the number of commented lines and the number of non-commented lines 
 and writes the result to standard out. It recognizes all valid php comment markers.
 
